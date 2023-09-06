@@ -26,4 +26,6 @@ Route::resource('/cities', CityController::class);
 Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
 Route::delete('/messages/destroy/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
+
+Route::resource('/cities', CityController::class); //commin
 Route::resource('/cities', CityController::class); //commin
